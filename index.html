@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="A beginner-to-advanced guide to online privacy and digital security. Learn how to browse safely, lock down your phone, and reclaim your data." />
+    <meta name="keywords" content="privacy, security, online safety, tor, firefox, grapheneos, digital hygiene, ghost.moe, privacy starter guide, security starter guide, anti-censorship guide" />
+    <meta name="author" content="ghost.moe" />
+    <meta property="og:title" content="ghost.moe — Privacy & Security Guide" />
+    <meta property="og:description" content="Simple steps to secure your digital life. From browsers to phones, ghost.moe helps you choose your level of protection." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ghost.moe" />
+    <meta property="og:image" content="https://ghost.moe/assets/preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ghost.moe — Privacy & Security Guide" />
+    <meta name="twitter:description" content="Simple steps to secure your digital life. From browsers to phones, ghost.moe helps you choose your level of protection." />
+    <meta name="twitter:image" content="https://ghost.moe/assets/preview.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ghost.moe — A minimalist guide to digital privacy, security, and anti-censorship.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <ul>
+        <li>
+          <a href="#intro">
+            Intro
+          </a>
+        </li>
+        <li>
+          <strong>
+            Privacy
+          </strong>
+          <ul>
+            <li>
+              <a href="#browsing">
+                Browsing
+              </a>
+            </li>
+            <li>
+              <a href="#phones">
+                Phones
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>
+            Security
+          </strong>
+          <ul>
+            <li>
+              <a href="#accounts">
+                Accounts
+              </a>
+            </li>
+            <li>
+              <a href="#2fa">
+                Two-Factor Auth
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>
+            Anti-Censorship
+          </strong>
+          <ul>
+            <li>
+              <a href="#vpn">
+                VPN
+              </a>
+            </li>
+            <li>
+              <a href="#mirrors">
+                Mirrors
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>
+          ghost.moe
+        </h1>
+        <p class="tagline">
+          A minimalist guide to digital privacy, security, and anti-censorship.
+        </p>
+      </header>
+      <section id="intro" class="intro">
+        <p>
+          Welcome to ghost.moe. This guide is meant to help you take control of
+          your digital privacy and security. With more privacy and security, comes
+          less convenience. This is an unfortunate reality. We've broken things down
+          by topic, and each topic has three levels: More Convenient, Balanced, and
+          More Secure/Private. Start where you're comfortable.
+        </p>
+      </section>
+      <section id="threats" class="section">
+        <h2>
+          Threat Modeling
+        </h2>
+        <p>
+          The most important thing to consider when you are worried about privacy
+          and security, is your threat model. Who are you trying to hide your data
+          from? If you only need to hide your data from your family, you may just
+          need to delete your browser history. If you are trying to hide your data
+          from governments, you will have to do quite a bit more work than just deleting
+          your browser history. Come up with your threat model, and think about the
+          tools that this adversary has at their disposal. Keep that in mind when
+          going through this guide.
+        </p>
+      </section>
+      <section id="browsing" class="section">
+        <h2>
+          🧭 Web Browsing
+        </h2>
+        <p>
+          Your web browser is one of the most used programs on your system. Taking
+          steps to lock down your web browser will greatly increase your privacy.
+        </p>
+        <div class="levels">
+          <div class="level easy">
+            <h3>
+              More Convenient
+            </h3>
+            <ul>
+              <li>
+                Switch to
+                <strong>
+                  <a href="https://firefox.com">
+                    Firefox
+                  </a>
+                </strong>
+                <span class="explain">
+                  Firefox has a long history of respecting your privacy.
+                </span>
+              </li>
+              <li>
+                Install an adblocker like
+                <strong>
+                  <a href="https://ublockorigin.com/">
+                    uBlock Origin
+                  </a>
+                </strong>
+                .
+                <span class="explain">
+                  Ads can be used to track you across websites or give you malware.
+                </span>
+              </li>
+              <li>
+                Use 
+                <strong>
+                  <a href="https://duckduckgo.com/">
+                    DuckDuckGo
+                  </a>
+                </strong>
+                instead of google.
+                <span class="explain">
+                  DuckDuckGo does not track your searches or browsing history.
+                </span>
+              </li>
+              <li>
+                Disable third-party cookies in settings.
+                <span class="explain">
+                  Cookies can also be used to track you across websites.
+                </span>
+              </li>
+              <li>
+                Tell websites not to sell or share your data in settings.
+                <span class="explain">
+                  Note: Websites do not have to adhere to this request.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="level medium">
+            <h3>
+              Balanced
+            </h3>
+            <ul>
+              <li>
+                Set Firefox to "Strict" Enhanced Tracking Protection.
+                <span class="explain">
+                  Note: This could cause some websites to break.
+                </span>
+              </li>
+              <li>
+                Set Firefox to delete cookies and site data when Firefox is closed.
+                <span class="explain">
+                  This will make it harder to track you between sessions.
+                </span>
+              </li>
+              <li>
+                Set Firefox to "Always use private browsing mode".
+                <span class="explain">
+                  This will log you out of everything and forget your history. This is very useful on shared computers or laptops that could easily be stolen.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="level hard">
+            <h3>
+              More Secure
+            </h3>
+            <ul>
+              <li>
+                Use
+                <strong>
+                  <a href="https://www.torproject.org/">
+                    Tor Browser
+                  </a>
+                </strong>
+                for all sensitive browsing.
+                <span class="explain">
+                  Tor is the gold standard browser for privacy and anti-censorship. It will be very slow.
+                </span>
+              </li>
+              <li>
+                Block javascript with 
+                <strong>
+                  <a href="https://addons.mozilla.org/firefox/addon/noscript">
+                    NoScript
+                  </a>
+                </strong>
+                or
+                <strong>
+                  <a href="https://addons.mozilla.org/firefox/addon/ghostery">
+                    Ghostery
+                  </a>
+                </strong>
+                <span class="explain">
+                  Javascript is code that a website chooses to run on your computer. Blocking javascript can stop websites from learning more about your computer.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="phones" class="section">
+        <h2>
+          📱 Phones
+        </h2>
+        <p>
+          Most people carry their phone everywhere they go. This can be used to
+          track you.
+        </p>
+        <div class="levels">
+          <div class="level easy">
+            <h3>
+              More Convenient
+            </h3>
+            <ul>
+              <li>
+                Disable personalized ads in iOS or Android settings.
+                <span class="explain">
+                  Android: Settings > Google > Ads > Turn off "Ad Personalization"<br>
+                  iOS: Settings > Privacy & Security > Apple Advertising > Turn off Personalized Ads
+                </span>
+              </li>
+              <li>
+                Manage app permissions.
+                <span class="explain">
+                  Set location permissions to “While using the app” or “Ask every time”.<br>
+                  Disable microphone and camera access for non-essential apps.
+                  Disable system-wide location when not needed.
+                </span>
+              </li>
+              <li>
+                Remove unused apps.
+                <span class="explain">
+                  Apps can run in the background even if you are not using them.
+                </span>
+              </li>
+              <li>
+                Use a pin or password to unlock your phone.
+                <span class="explain">
+                  In some jurisdictions you can be required to unlock your phone with your fingerprint or face, but not with a pin or password.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="level medium">
+            <h3>
+              Balanced
+            </h3>
+            <ul>
+              <li>
+                Use open-source apps from
+                <strong>
+                  F-Droid
+                </strong>
+                .
+              </li>
+              <li>
+                Limit app permissions manually.
+              </li>
+            </ul>
+          </div>
+          <div class="level hard">
+            <h3>
+              More Secure
+            </h3>
+            <ul>
+              <li>
+                Install a custom ROM like
+                <strong>
+                  GrapheneOS
+                </strong>
+                or
+                <strong>
+                  LineageOS
+                </strong>
+                .
+              </li>
+              <li>
+                Avoid all Google services.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="accounts" class="section">
+        <h2>
+          🔐 Accounts
+        </h2>
+        <div class="levels">
+          <div class="level easy">
+            <h3>
+              More Convenient
+            </h3>
+            <ul>
+              <li>
+                Use strong and unique passwords for every account.
+              </li>
+              <li>
+                Enable password managers like Bitwarden or 1Password.
+              </li>
+            </ul>
+          </div>
+          <div class="level medium">
+            <h3>
+              Balanced
+            </h3>
+            <ul>
+              <li>
+                Enable two-factor authentication (2FA) where available.
+              </li>
+              <li>
+                Avoid using social logins (Google, Facebook).
+              </li>
+            </ul>
+          </div>
+          <div class="level hard">
+            <h3>
+              More Secure
+            </h3>
+            <ul>
+              <li>
+                Use pseudonyms and email aliases.
+              </li>
+              <li>
+                Segment identities for different activities.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="2fa" class="section">
+        <h2>
+          🛡️ Two-Factor Authentication
+        </h2>
+        <div class="levels">
+          <div class="level easy">
+            <h3>
+              More Convenient
+            </h3>
+            <ul>
+              <li>
+                Enable 2FA using SMS or email.
+              </li>
+            </ul>
+          </div>
+          <div class="level medium">
+            <h3>
+              Balanced
+            </h3>
+            <ul>
+              <li>
+                Use TOTP apps like Aegis or Authy.
+              </li>
+            </ul>
+          </div>
+          <div class="level hard">
+            <h3>
+              More Secure
+            </h3>
+            <ul>
+              <li>
+                Use hardware tokens like YubiKey or Nitrokey.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="vpn" class="section">
+        <h2>
+          🛰️ VPN
+        </h2>
+        <div class="levels">
+          <div class="level easy">
+            <h3>
+              More Convenient
+            </h3>
+            <ul>
+              <li>
+                Use any reputable no-log VPN service.
+              </li>
+            </ul>
+          </div>
+          <div class="level medium">
+            <h3>
+              Balanced
+            </h3>
+            <ul>
+              <li>
+                Use VPNs based in privacy-friendly jurisdictions.
+              </li>
+            </ul>
+          </div>
+          <div class="level hard">
+            <h3>
+              More Secure
+            </h3>
+            <ul>
+              <li>
+                Self-host your own VPN using WireGuard.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>
+          Built with minimalism in mind. No tracking, no nonsense. ❤️
+        </p>
+      </footer>
+    </main>
+  </body>
+
+</html>
+ 
