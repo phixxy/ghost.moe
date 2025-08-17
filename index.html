@@ -123,7 +123,6 @@
         color: #eee;
         font-size: 1rem;
         line-height: 1.6;
-        margin-bottom: 1.5rem;
         padding: 0 1rem;
         max-width: 700px;
         margin-left: auto;
@@ -136,6 +135,10 @@
       .section h2 {
         font-size: 1.6rem;
         margin-bottom: 1rem;
+      }
+
+      .description {
+        margin-bottom: 1.5rem;
       }
 
       .convenient {
@@ -235,6 +238,11 @@
               </a>
             </li>
             <li>
+                <a href="#ffconfig">
+                    Firefox Configuration
+                </a>
+            </li>
+            <li>
               <a href="#phones">
                 Phones
               </a>
@@ -332,7 +340,7 @@
         <h2>
           🧭 Web Browsing
         </h2>
-        <p>
+        <p class="description">
           Your web browser is typically one of the most used programs on your system. Taking
           steps to lock down your web browser will greatly increase your privacy.
         </p>
@@ -348,55 +356,10 @@
 
         <div class="level easy">
           <h3>
-            Install an adblocker like <a href="https://ublockorigin.com/">uBlock Origin</a>
-          </h3>
-          <p>
-            Ads can be used to track you across websites or give your computer malware.
-          </p>
-        </div>
-
-        <div class="level easy">
-          <h3>
             Use <a href="https://duckduckgo.com/">DuckDuckGo</a> instead of Google.
           </h3>
           <p>
             DuckDuckGo does not track your searches or browsing history.
-          </p>
-        </div>
-
-        <div class="level easy">
-          <h3>
-            Tell websites not to sell or share your data in settings.
-          </h3>
-          <p>
-            Note: Websites do not have to adhere to this request.
-          </p>
-        </div>
-
-        <div class="level medium">
-          <h3>
-            Set Firefox to "Strict" Enhanced Tracking Protection.
-          </h3>
-          <p>
-            Note: This could cause some websites to break.
-          </p>
-        </div>
-
-        <div class="level medium">
-          <h3>
-            Set Firefox to delete cookies and site data when Firefox is closed.
-          </h3>
-          <p>
-            This will make it harder to track you between sessions.
-          </p>
-        </div>
-
-        <div class="level medium">
-          <h3>
-            Set Firefox to "Always use private browsing mode".
-          </h3>
-          <p>
-            This will log you out of everything and erase your history after closing the browser. This is very useful on shared computers or laptops that could easily be stolen.
           </p>
         </div>
 
@@ -408,22 +371,86 @@
             Tor is the gold standard browser for privacy and anti-censorship. It will be very slow, however.
           </p>
         </div>
+      </section>
+      <section id="ffconfig" class="section">
+        <h2>
+          🦊 Firefox Configuration
+        </h2>
+        <p class="description">
+          If you are using Firefox these settings could be enabled to make it more private/secure. Otherwise, skip this section.
+        </p>
 
-        <div class="level hard">
-          <h3>
-            Block javascript with <a href="https://addons.mozilla.org/firefox/addon/noscript">NoScript</a> or <a href="https://addons.mozilla.org/firefox/addon/ghostery">Ghostery</a>
-          </h3>
-          <p>
-            Javascript is code that a website chooses to run on your computer. Blocking javascript can stop websites from learning more about your computer.
-          </p>
+        <div class="level easy">
+        <h3>Enable "Tell websites not to sell or share my data"</h3>
+        <p>Note: Websites do not have to adhere to this request.</p>
         </div>
 
+        <div class="level easy">
+        <h3>Enable "Delete cookies and site data when Firefox is closed"</h3>
+        <p>This will make it harder to track you between sessions.</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Disable "Ask to save passwords"</h3>
+        <p>If someone gets access to your computer they can't find your passwords saved in your browser.</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Disable all "Autofill" settings</h3>
+        <p>If someone gets access to your computer they can't find your information saved in your browser.</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Disable all "Firefox data collection"</h3>
+        <p>Minimize the data collected on you, even from products you trust.</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Enable "Allow websites to perform privacy-preserving ad measurement"</h3>
+        <p>Controversial explaination coming soon</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Enable "HTTPS-only mode in all windows"</h3>
+        <p>Forces encryption between you and the website you visit. Can show a warning message if the website doesn't support HTTPS.</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Enable "DNS over HTTPS (Increased Protection)"</h3>
+        <p>This prevents someone on your local network from seeing what websites you are visiting.</p>
+        </div>
+
+        <div class="level easy">
+        <h3>Install an adblocker like <a href="https://ublockorigin.com/">uBlock Origin</a></h3>
+        <p>Ads can be used to track you across websites or give your computer malware.</p>
+        </div>
+
+        <div class="level medium"> <!--Maybe this should be easy also. Need to think more about this one.-->
+        <h3>Enable "DNS over HTTPS (Max Protection)"</h3>
+        <p>This can cause warning pages to show up before using insecure DNS.</p>
+        </div>
+
+        <div class="level medium">
+        <h3>Enable "Always use private browsing mode"</h3>
+        <p>This will log you out of everything and erase your history after closing the browser. This is very useful on shared computers or on laptops that could easily be stolen.</p>
+        </div>
+
+        <div class="level medium">
+        <h3>Enable "Strict tracking protection"</h3>
+        <p>Note: This could cause some websites to break.</p>
+        </div>
+
+        <div class="level hard">
+        <h3>Block javascript with <a href="https://addons.mozilla.org/firefox/addon/noscript">NoScript</a> or <a href="https://addons.mozilla.org/firefox/addon/ghostery">Ghostery</a></h3>
+        <p>Javascript is code that a website chooses to run on your computer. Blocking javascript can stop websites from learning more about your computer.</p>
+        </div>
       </section>
+
       <section id="phones" class="section">
         <h2>
           📱 Phones
         </h2>
-        <p>
+        <p class="description">
           Most people carry their phone everywhere they go. This can be used to
           track you.
         </p>
