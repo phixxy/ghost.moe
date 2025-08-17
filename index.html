@@ -537,16 +537,34 @@
             Use strong and unique passwords for every account.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Password reuse should always be avoided. If one website gets hacked and you use the same password for everything, then hackers can use your information to login to other services.
           </p>
         </div>
 
         <div class="level easy">
           <h3>
-            Enable password managers like Bitwarden or 1Password.
+            Consider switching to privacy respecting services like <a href="https://proton.me">Proton</a>.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Proton has email, VPN, cloud storage, a password manager, and more.
+          </p>
+        </div>
+
+        <div class="level easy">
+          <h3>
+            Use an open source password manager like <a href="https://bitwarden.com/">Bitwarden</a> or <a href="https://proton.me/pass">Proton Pass</a>.
+          </h3>
+          <p>
+            Using a password manager makes it very easy to create strong and unique passwords.
+          </p>
+        </div>
+
+        <div class="level easy">
+          <h3>
+            Check if services you use have been hacked with <a href="https://haveibeenpwned.com/">Have I Been Pwned</a>.
+          </h3>
+          <p>
+            You should change any passwords you use for the services that show up here. You can also sign up to be notified if you are in a new data breach.
           </p>
         </div>
 
@@ -555,7 +573,7 @@
             Enable two-factor authentication (2FA) where available.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Many websites support 2FA and it should be enabled when possible, especially for your bank and email.
           </p>
         </div>
 
@@ -564,16 +582,16 @@
             Avoid using social logins (Google, Facebook).
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Using social logins creates a single point of failure. If Google gets hacked and you use Google to login to everything, then all of your accounts are comprimised.
           </p>
         </div>
 
-        <div class="level hard">
+        <div class="level medium">
           <h3>
             Use pseudonyms and email aliases.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Use pseudonyms or alternate email addresses to create separation between different things that you do online. For example: One identity for shopping, and one for activism.
           </p>
         </div>
 
@@ -582,7 +600,7 @@
             Segment identities for different activities.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Fully separating identities (e.g., using distinct browsers, devices, and accounts for different activities) is difficult to do without any crossover, but it can greatly reduce tracking risks.
           </p>
         </div>
       </section>
@@ -590,21 +608,24 @@
         <h2>
           🛡️ Two-Factor Authentication
         </h2>
+        <p class="description">
+          Enabling 2FA makes it significantly harder to hack your accounts. Even if someone has your password they would also need to be able to authenticate with your 2FA device to login.
+        </p>
         <div class="level easy">
           <h3>
             Enable 2FA using SMS or email.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            While SMS or email is better than nothing, these methods are vulnerable to SIM swap attacks or email account takeovers. For stronger protection use a TOTP app.
           </p>
         </div>
 
         <div class="level medium">
           <h3>
-            Use TOTP apps like Aegis or Authy.
+            Use TOTP apps like <a href="https://getaegis.app/">Aegis</a>.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Aegis is an open-source app available on Android.
           </p>
         </div>
 
@@ -613,7 +634,7 @@
             Use hardware tokens like YubiKey or Nitrokey.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            These are physical devices and not all services support them.
           </p>
         </div>
 
@@ -622,21 +643,15 @@
         <h2>
           🛰️ VPN
         </h2>
+        <p class="description">
+          VPNs are NOT a tool that make you more private. Rather they shift who can look at what you are doing. Without a VPN your ISP can see what websites you visit. With a VPN, your ISP can see that you are connecting all of your traffic to one server (VPN), and your VPN can see what websites you visit. This is important because many VPN sellers claim that they make you more private or secure which is NOT the case. If you just want to be more private or secure you do NOT need a VPN. However, VPNs are useful for bypassing censorship. If something is banned or blocked in your country, you may be able to bypass the block with a VPN.
+        </p>
         <div class="level easy">
           <h3>
-            Use any reputable no-log VPN service.
+            Use a no-log VPN in a privacy friendly country like <a href="https://mullvad.net">Mullvad</a>.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
-          </p>
-        </div>
-
-        <div class="level medium">
-          <h3>
-            Use VPNs based in privacy-friendly jurisdictions.
-          </h3>
-          <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            Choosing a VPN with no logs is important because any logs could be handed over if requested. Having your service in a country with strong privacy laws reduces this risk, but remember the VPN can see your traffic.
           </p>
         </div>
 
@@ -645,7 +660,7 @@
             Self-host your own VPN using WireGuard.
           </h3>
           <p>
-            This will be expanded text describing why you should do the above, in more detail.
+            If you don't trust any VPN company, you do have the option of renting a server somewhere and making your own with <a href="https://www.wireguard.com/">Wireguard</a>. Renting a server with your own identity will lead to less anonymity though.
           </p>
         </div>
       </section>
